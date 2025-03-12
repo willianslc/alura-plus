@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #3b8df1;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh; /*usa 100% da viewport, ou seja, 100% da altura da tela do dispositivo*/
+    display: grid;
+    grid-template-columns: 50% 50%; /*dividindo a tela em duas colunas, se colocasse 33% 3 vezes iria dividir a tela em 3 colunas*/
+}
+
+.principal {
+    background-image: url("img/Background.png"); /*para uma questão decorativa usa essa forma de inserção de imagem do contrário usa img*/
+    background-repeat: no-repeat; /*faz com que a imagem não fique se repetindo*/
+    background-size: contain; /*a imagem não estava indo até a margem direita da tela, com isso ela passou a ir*/
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.botao-azul {
+    display: block;
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    margin-bottom: 1em;
+}
+
+.botao2 {
+    display: block;
+    border: 2px solid var(--branco-principal);
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+}
+
+.aviso {
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--cinza-secundario);
+}
+
+.img-home {
+    margin: 1em 0 2em 0;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
+/*DAQUI PRA BAIXO SEGUNDA PARTE DA PÁGINA*/
+
+.img-secundario {
+    width: 70%;
+    margin: 0 5em;
+}
+
+.secundaria {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.titulo-descricao {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao {
+    color: var(--cinza-secundario);
+}
+
+/*DAQUI PRA BAIXO TERCEIRA PARTE DA PÁGINA*/
+
+.azul-botao2 {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+/*DAQUI PRA BAIXO QUARTA PARTE DA PÁGINA*/
+
+/*O código HTML para quarta parte foi basicamente todo copiado da segunda parte
+dessa forma o CSS é o mesmo que foi usado na segunda parte*/
+
+/*DAQUI PRA BAIXO QUINTA PARTE DA PÁGINA*/
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.titulo-dispositivos {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.lista-item {
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+
+/*DAQUI PRA BAIXO FOOTER*/
+.rodape {
+    background-color: var(--cor-fundo);
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin: 8em 3em 6em 3em;
+}
+
+.rodape-logo {
+    margin-bottom: 2em;
+}
+
+.rodape-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0.5em;
+    
+}
+
+.lista-link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape-texto {
+    font-size: 0.8em;
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+}
+
+.lista-link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista-link a:active {
+    color: aqua;
+}
+
+.botao-azul:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-fundo);
+}
